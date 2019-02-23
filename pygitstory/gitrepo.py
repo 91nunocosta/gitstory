@@ -1,4 +1,6 @@
 """Git repositories."""
+from pygitstory.gitlog import GitLog
+
 
 class GitRepo:
     """A git repository."""
@@ -6,7 +8,7 @@ class GitRepo:
     def __init__(self, remote_url, path=None):
         """
         Initialize a git repository for a given remote repository url.
-        
+
         Arguments:
         remote_url -- URI of the remote repository.
         path -- the path for the directory where the repository was or will be cloned.
@@ -21,7 +23,7 @@ class GitRepo:
         Do nothing if the repository was already clone into the specified path.
         """
         pass
-    
+
     def log(self):
         """Get the repository commit history."""
-        return None
+        return GitLog()
