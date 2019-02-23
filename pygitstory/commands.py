@@ -2,6 +2,7 @@
 import subprocess
 
 from os import path
+from os.path import exists as path_exists
 
 # Log format:
 # <hash> <author date> <author name> <author email> <commiter date> <commiter name> <commiter email> <message>
@@ -14,7 +15,10 @@ LOG_FORMAT = SEPARATOR.join(['%H', '%aI', '%an', '%ae', '%cI', '%cn', '%ce', '%s
 
 def clone(remote_url, path):
     """Clone a repository from a remote url into a given path."""
-    return __execute_git_command('clone', remote_url, path)
+    if path_exists(path):
+        return False
+    __execute_git_command('clone', remote_url, path)
+    return True
 
 def log(repo_path):
     """Log for a given git repository."""
