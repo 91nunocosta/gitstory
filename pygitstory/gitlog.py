@@ -8,7 +8,6 @@ class GitLog:
         """Initialize a git commit history."""
         self.commits = commits
 
-
 class GitCommit:
     """A git commit."""
 
@@ -23,3 +22,9 @@ class GitCommit:
         self.commiter_name = commiter_name
         self.commiter_email = commiter_email
         self.message = message
+
+    def __eq__(self, other):
+        return other.__dict__ == self.__dict__
+
+    def __repr__(self):
+        return str(self.__dict__)

@@ -3,7 +3,7 @@ from pygitstory.gitlog import GitCommit
 from datetime import datetime
 
 REPO_URL = 'https://github.com/codacy/git-tests.git'
-REPO_PATH = join(dirname(abspath(__file__)), 'tmp')
+REPO_PATH = join(join(dirname(abspath(__file__)), 'tmp'), 'git-tests')
 
 # first 3 commits from 'https://github.com/codacy/git-tests.git'
 GIT_TEST_LOG = [
@@ -19,10 +19,10 @@ GIT_TEST_LOG = [
     ),
     GitCommit(
         sha='00a5762b09a7704aef6e30ccd7c368758a56261a',
-        author_date=datetime(2018, 6, 8),
+        author_date=datetime(2018, 6, 8, 15, 59, 55),
         author_name="Johann Egger",
         author_email="johann@codacy.com",
-        commiter_date=datetime(2018, 6, 8),
+        commiter_date=datetime(2018, 6, 8, 15, 59, 55),
         commiter_name="Johann Egger",
         commiter_email="johann@codacy.com",
         message="Add a file"
