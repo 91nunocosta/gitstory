@@ -1,6 +1,6 @@
 """Git repositories."""
 from pygitstory.gitlog import GitLog
-from pygitstory.commands import log
+from pygitstory.commands import log, clone
 from pygitstory.parsing import parse_log
 
 
@@ -20,12 +20,8 @@ class GitRepo:
         self.path = path
 
     def clone(self):
-        """
-        Clone a git repository.
-
-        Do nothing if the repository was already clone into the specified path.
-        """
-        pass
+        """Clone the git repository."""
+        clone(self.remote_url, self.path)
 
     def log(self):
         """Get the repository commit history."""

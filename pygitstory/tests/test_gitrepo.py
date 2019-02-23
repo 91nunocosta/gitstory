@@ -10,8 +10,10 @@ class TestGitRepo(TestCase):
     def setUp(self):
         self.repo = GitRepo(REPO_URL, REPO_PATH)
     
-    def test_clone(self):
-        pass
+    @patch('pygitstory.gitrepo.clone', return_value="a log")
+    def test_clone(self, clone_mock):
+        self.repo.clone()
+        clone_mock.assert_called_with(REPO_URL, REPO_PATH)
 
     @patch('pygitstory.gitrepo.log', return_value="a log")
     @patch('pygitstory.gitrepo.parse_log', return_value=GitLog(GIT_TEST_LOG))
