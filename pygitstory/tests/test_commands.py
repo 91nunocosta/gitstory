@@ -23,6 +23,6 @@ class TestGitCommands(TestCase):
         run_mock.assert_called()
         command_args = run_mock.call_args[0][0]
         self.assertListEqual(command_args, [
-            'git', '--git-dir=path/.git', 'log', '--format=format:{}'.format(LOG_FORMAT)])
+            'git', '--git-dir=path/.git', 'log', '--format=format:{}'.format(LOG_FORMAT), '--reverse'])
         self.assertEqual(output, 'output')
         print(LOG_FORMAT)

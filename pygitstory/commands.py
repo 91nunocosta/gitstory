@@ -19,7 +19,7 @@ def clone(remote_url, path):
 def log(repo_path):
     """Log for a given git repository."""
     format_option = '--format=format:{}'.format(LOG_FORMAT)
-    return __execute_git_command('log', format_option, git_repo_path=repo_path)
+    return __execute_git_command('log', format_option, '--reverse', git_repo_path=repo_path)
 
 def __execute_git_command(command, *args, git_repo_path=None):
     cmd = ['git'] 
