@@ -12,8 +12,11 @@ class TestGitRepo(TestCase):
     
     @patch('pygitstory.gitrepo.clone', return_value="a log")
     def test_clone(self, clone_mock):
-        self.repo.clone()
+        result = GitRepo.clone(REPO_URL, REPO_PATH)
         clone_mock.assert_called_with(REPO_URL, REPO_PATH)
+        self.assertIsNotNone(result)
+        self.assertEqual(result.remote_url, REPO_URL)
+        self.assertEqual(result.path, REPO_PATH)
 
     @patch('pygitstory.gitrepo.log', return_value="a log")
     @patch('pygitstory.gitrepo.parse_log', return_value=GitLog(GIT_TEST_LOG))

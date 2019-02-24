@@ -19,9 +19,11 @@ class GitRepo:
         self.remote_url = remote_url
         self.path = path
 
-    def clone(self):
+    @classmethod
+    def clone(cls, remote_url, path):
         """Clone the git repository."""
-        clone(self.remote_url, self.path)
+        clone(remote_url, path)
+        return GitRepo(remote_url, path)
 
     def log(self):
         """Get the repository commit history."""
