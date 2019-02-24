@@ -7,6 +7,9 @@ class GitLog:
     def __init__(self, commits=[]):
         """Initialize a git commit history."""
         self.commits = commits
+    
+    def __eq__(self, value):
+        return value.commits == self.commits
 
 class GitCommit:
     """A git commit."""
