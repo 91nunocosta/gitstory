@@ -1,9 +1,11 @@
+from copy import deepcopy
 from unittest import TestCase
+from dateutil.parser import parse
 
-from pygitstory.gitlog_store import MongoGitlogStore
-
-from pygitstory.tests.git_tests_log import GIT_TEST_LOG, REPOS_DIR, REPO_PATH, REPO_URL
-
+from pygitstory.gitlog import GitLog
+from pygitstory.gitlog_store import REPO_URL_FIELD, MongoGitlogStore
+from pygitstory.tests.git_tests_log import (GIT_TEST_LOG, REPO_PATH, REPO_URL,
+                                            REPOS_DIR)
 
 MONGO_HOST = 'localhost'
 MONGO_PORT = 27017
@@ -68,15 +70,27 @@ class TestMongoGitlogStore(TestCase):
         self.gitlog_store.commits.drop()
 
     def test_get(self):
-        self.gitlog_store.commits.insert_many(COMMITS)
+        self.gitlog_store.commits.insert_many(deepcopy(COMMITS))
         history = self.gitlog_store.get(TARGET_REPO)
         self.maxDiff = None
         self.assertListEqual(history.commits, TARGET_HISTORY)
 
     def test_put(self):
-        pass
+        self.gitlog_store.put(TARGET_REPO, GitLog(GIT_TEST_LOG))
+        found_commits = list(self.gitlog_store.commits.find({REPO_URL_FIELD: TARGET_REPO}))
+        for commit in found_commits:
+            # _id is a Mongo added key
+            del commit['_id']
+        # 4th commit is the only one from other repo
+        self.maxDiff = None
+        expected_commits = deepcopy(COMMITS[:3])
+        for commit in expected_commits:
+            # date fields are stored in Mongo as strings not datetime
+            commit['author_date'] = parse(commit['author_date'])
+            commit['commiter_date'] = parse(commit['commiter_date'])
+        self.assertListEqual(found_commits, expected_commits)
 
     def test_has(self):
         self.assertFalse(self.gitlog_store.has(TARGET_REPO))
-        self.gitlog_store.commits.insert_many(COMMITS)
+        self.gitlog_store.commits.insert_many(deepcopy(COMMITS))
         self.assertTrue(self.gitlog_store.has(TARGET_REPO))

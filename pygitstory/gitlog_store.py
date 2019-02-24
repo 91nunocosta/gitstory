@@ -1,7 +1,9 @@
 '''Git logs persistence.'''
+from copy import deepcopy
+
 from pymongo import MongoClient
 
-from pygitstory.gitlog import GitLog, GitCommit
+from pygitstory.gitlog import GitCommit, GitLog
 
 REPO_URL_FIELD = 'repo_url'
 
@@ -40,7 +42,10 @@ class MongoGitlogStore:
         repo_url -- the url of the repository;
         gitlog -- the commit history.
         """
-        pass
+        for commit in gitlog.commits:
+            commit_doc = deepcopy(commit.__dict__)
+            commit_doc[REPO_URL_FIELD] = repo_url
+            self.commits.insert_one(commit_doc)
     
     def has(self, repo_url):
         """Check if a the commit history of a given repository was already stored."""
