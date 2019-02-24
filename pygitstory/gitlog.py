@@ -1,6 +1,5 @@
 """Git commit histories."""
-
-
+from pygitstory.utils import as_datetime
 class GitLog:
     """A git commit history."""
 
@@ -18,10 +17,10 @@ class GitCommit:
                  commiter_date, commiter_name, commiter_email, message):
         """Initialize a commit."""
         self.sha = sha
-        self.author_date = author_date
+        self.author_date = as_datetime(author_date)
         self.author_name = author_name
         self.author_email = author_email
-        self.commiter_date = commiter_date
+        self.commiter_date = as_datetime(commiter_date)
         self.commiter_name = commiter_name
         self.commiter_email = commiter_email
         self.message = message

@@ -6,4 +6,4 @@ def as_datetime(value):
     if isinstance(value, datetime):
         return value
     else:
-        return parse(value)
+        return parse(value, ignoretz=True)
