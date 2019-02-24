@@ -77,4 +77,6 @@ class TestMongoGitlogStore(TestCase):
         pass
 
     def test_has(self):
-        pass
+        self.assertFalse(self.gitlog_store.has(TARGET_REPO))
+        self.gitlog_store.commits.insert_many(COMMITS)
+        self.assertTrue(self.gitlog_store.has(TARGET_REPO))

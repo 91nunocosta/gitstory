@@ -44,4 +44,4 @@ class MongoGitlogStore:
     
     def has(self, repo_url):
         """Check if a the commit history of a given repository was already stored."""
-        return False
+        return self.commits.find_one({REPO_URL_FIELD: repo_url}) is not None
