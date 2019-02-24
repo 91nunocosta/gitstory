@@ -7,7 +7,7 @@ from pygitstory.parsing import parse_log
 class GitRepo:
     """A git repository."""
 
-    def __init__(self, remote_url, path=None):
+    def __init__(self, remote_url, path):
         """
         Initialize a git repository for a given remote repository url.
 
