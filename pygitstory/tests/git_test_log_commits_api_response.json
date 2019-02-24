@@ -1,0 +1,630 @@
+[
+  {
+    "sha": "86a0acbc90a54060fe0acb18de9ff43dec8556f8",
+    "node_id": "MDY6Q29tbWl0MTM2NjI1NzA0Ojg2YTBhY2JjOTBhNTQwNjBmZTBhY2IxOGRlOWZmNDNkZWM4NTU2Zjg=",
+    "commit": {
+      "author": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:03:33Z"
+      },
+      "committer": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:03:33Z"
+      },
+      "message": "Remove a line",
+      "tree": {
+        "sha": "3c5487691185b84d7e58d924fd2cea04f4414441",
+        "url": "https://api.github.com/repos/codacy/git-tests/git/trees/3c5487691185b84d7e58d924fd2cea04f4414441"
+      },
+      "url": "https://api.github.com/repos/codacy/git-tests/git/commits/86a0acbc90a54060fe0acb18de9ff43dec8556f8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/codacy/git-tests/commits/86a0acbc90a54060fe0acb18de9ff43dec8556f8",
+    "html_url": "https://github.com/codacy/git-tests/commit/86a0acbc90a54060fe0acb18de9ff43dec8556f8",
+    "comments_url": "https://api.github.com/repos/codacy/git-tests/commits/86a0acbc90a54060fe0acb18de9ff43dec8556f8/comments",
+    "author": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9ec050f730a47fac41710aebca2a940e7ea46c62",
+        "url": "https://api.github.com/repos/codacy/git-tests/commits/9ec050f730a47fac41710aebca2a940e7ea46c62",
+        "html_url": "https://github.com/codacy/git-tests/commit/9ec050f730a47fac41710aebca2a940e7ea46c62"
+      }
+    ]
+  },
+  {
+    "sha": "9ec050f730a47fac41710aebca2a940e7ea46c62",
+    "node_id": "MDY6Q29tbWl0MTM2NjI1NzA0OjllYzA1MGY3MzBhNDdmYWM0MTcxMGFlYmNhMmE5NDBlN2VhNDZjNjI=",
+    "commit": {
+      "author": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:02:57Z"
+      },
+      "committer": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:02:57Z"
+      },
+      "message": "Add another line",
+      "tree": {
+        "sha": "0dec402c6aac4dd81362c3157af0d8c1deba2c29",
+        "url": "https://api.github.com/repos/codacy/git-tests/git/trees/0dec402c6aac4dd81362c3157af0d8c1deba2c29"
+      },
+      "url": "https://api.github.com/repos/codacy/git-tests/git/commits/9ec050f730a47fac41710aebca2a940e7ea46c62",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/codacy/git-tests/commits/9ec050f730a47fac41710aebca2a940e7ea46c62",
+    "html_url": "https://github.com/codacy/git-tests/commit/9ec050f730a47fac41710aebca2a940e7ea46c62",
+    "comments_url": "https://api.github.com/repos/codacy/git-tests/commits/9ec050f730a47fac41710aebca2a940e7ea46c62/comments",
+    "author": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f3c74949086eb3d1852fede0b9f065a2d730e967",
+        "url": "https://api.github.com/repos/codacy/git-tests/commits/f3c74949086eb3d1852fede0b9f065a2d730e967",
+        "html_url": "https://github.com/codacy/git-tests/commit/f3c74949086eb3d1852fede0b9f065a2d730e967"
+      }
+    ]
+  },
+  {
+    "sha": "f3c74949086eb3d1852fede0b9f065a2d730e967",
+    "node_id": "MDY6Q29tbWl0MTM2NjI1NzA0OmYzYzc0OTQ5MDg2ZWIzZDE4NTJmZWRlMGI5ZjA2NWEyZDczMGU5Njc=",
+    "commit": {
+      "author": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:02:28Z"
+      },
+      "committer": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:02:28Z"
+      },
+      "message": "Change a line",
+      "tree": {
+        "sha": "bb70b5d40cb220cc5d44ab4681c613f27b55b9f8",
+        "url": "https://api.github.com/repos/codacy/git-tests/git/trees/bb70b5d40cb220cc5d44ab4681c613f27b55b9f8"
+      },
+      "url": "https://api.github.com/repos/codacy/git-tests/git/commits/f3c74949086eb3d1852fede0b9f065a2d730e967",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/codacy/git-tests/commits/f3c74949086eb3d1852fede0b9f065a2d730e967",
+    "html_url": "https://github.com/codacy/git-tests/commit/f3c74949086eb3d1852fede0b9f065a2d730e967",
+    "comments_url": "https://api.github.com/repos/codacy/git-tests/commits/f3c74949086eb3d1852fede0b9f065a2d730e967/comments",
+    "author": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "263750043351a65117d23bd3013da996fc50353e",
+        "url": "https://api.github.com/repos/codacy/git-tests/commits/263750043351a65117d23bd3013da996fc50353e",
+        "html_url": "https://github.com/codacy/git-tests/commit/263750043351a65117d23bd3013da996fc50353e"
+      }
+    ]
+  },
+  {
+    "sha": "263750043351a65117d23bd3013da996fc50353e",
+    "node_id": "MDY6Q29tbWl0MTM2NjI1NzA0OjI2Mzc1MDA0MzM1MWE2NTExN2QyM2JkMzAxM2RhOTk2ZmM1MDM1M2U=",
+    "commit": {
+      "author": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:01:55Z"
+      },
+      "committer": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:01:55Z"
+      },
+      "message": "Re-add a file",
+      "tree": {
+        "sha": "a98822841b98847f8fa638b4e92daab7480d5ac7",
+        "url": "https://api.github.com/repos/codacy/git-tests/git/trees/a98822841b98847f8fa638b4e92daab7480d5ac7"
+      },
+      "url": "https://api.github.com/repos/codacy/git-tests/git/commits/263750043351a65117d23bd3013da996fc50353e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/codacy/git-tests/commits/263750043351a65117d23bd3013da996fc50353e",
+    "html_url": "https://github.com/codacy/git-tests/commit/263750043351a65117d23bd3013da996fc50353e",
+    "comments_url": "https://api.github.com/repos/codacy/git-tests/commits/263750043351a65117d23bd3013da996fc50353e/comments",
+    "author": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e5f290c2e4eb0eb1a14577dc0cc9e5f099b26861",
+        "url": "https://api.github.com/repos/codacy/git-tests/commits/e5f290c2e4eb0eb1a14577dc0cc9e5f099b26861",
+        "html_url": "https://github.com/codacy/git-tests/commit/e5f290c2e4eb0eb1a14577dc0cc9e5f099b26861"
+      }
+    ]
+  },
+  {
+    "sha": "e5f290c2e4eb0eb1a14577dc0cc9e5f099b26861",
+    "node_id": "MDY6Q29tbWl0MTM2NjI1NzA0OmU1ZjI5MGMyZTRlYjBlYjFhMTQ1NzdkYzBjYzllNWYwOTliMjY4NjE=",
+    "commit": {
+      "author": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:00:45Z"
+      },
+      "committer": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:00:45Z"
+      },
+      "message": "remove a file",
+      "tree": {
+        "sha": "613e1f4824c9bced15ec5cd89e25c3d9ab293d24",
+        "url": "https://api.github.com/repos/codacy/git-tests/git/trees/613e1f4824c9bced15ec5cd89e25c3d9ab293d24"
+      },
+      "url": "https://api.github.com/repos/codacy/git-tests/git/commits/e5f290c2e4eb0eb1a14577dc0cc9e5f099b26861",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/codacy/git-tests/commits/e5f290c2e4eb0eb1a14577dc0cc9e5f099b26861",
+    "html_url": "https://github.com/codacy/git-tests/commit/e5f290c2e4eb0eb1a14577dc0cc9e5f099b26861",
+    "comments_url": "https://api.github.com/repos/codacy/git-tests/commits/e5f290c2e4eb0eb1a14577dc0cc9e5f099b26861/comments",
+    "author": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "57012cdf0c3b277ba2feef552ab60d58f13bf774",
+        "url": "https://api.github.com/repos/codacy/git-tests/commits/57012cdf0c3b277ba2feef552ab60d58f13bf774",
+        "html_url": "https://github.com/codacy/git-tests/commit/57012cdf0c3b277ba2feef552ab60d58f13bf774"
+      }
+    ]
+  },
+  {
+    "sha": "57012cdf0c3b277ba2feef552ab60d58f13bf774",
+    "node_id": "MDY6Q29tbWl0MTM2NjI1NzA0OjU3MDEyY2RmMGMzYjI3N2JhMmZlZWY1NTJhYjYwZDU4ZjEzYmY3NzQ=",
+    "commit": {
+      "author": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:00:27Z"
+      },
+      "committer": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T14:00:27Z"
+      },
+      "message": "Rename a file",
+      "tree": {
+        "sha": "01b980bf1047d72721c949096dc8493bb2cafe1a",
+        "url": "https://api.github.com/repos/codacy/git-tests/git/trees/01b980bf1047d72721c949096dc8493bb2cafe1a"
+      },
+      "url": "https://api.github.com/repos/codacy/git-tests/git/commits/57012cdf0c3b277ba2feef552ab60d58f13bf774",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/codacy/git-tests/commits/57012cdf0c3b277ba2feef552ab60d58f13bf774",
+    "html_url": "https://github.com/codacy/git-tests/commit/57012cdf0c3b277ba2feef552ab60d58f13bf774",
+    "comments_url": "https://api.github.com/repos/codacy/git-tests/commits/57012cdf0c3b277ba2feef552ab60d58f13bf774/comments",
+    "author": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "00a5762b09a7704aef6e30ccd7c368758a56261a",
+        "url": "https://api.github.com/repos/codacy/git-tests/commits/00a5762b09a7704aef6e30ccd7c368758a56261a",
+        "html_url": "https://github.com/codacy/git-tests/commit/00a5762b09a7704aef6e30ccd7c368758a56261a"
+      }
+    ]
+  },
+  {
+    "sha": "00a5762b09a7704aef6e30ccd7c368758a56261a",
+    "node_id": "MDY6Q29tbWl0MTM2NjI1NzA0OjAwYTU3NjJiMDlhNzcwNGFlZjZlMzBjY2Q3YzM2ODc1OGE1NjI2MWE=",
+    "commit": {
+      "author": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T13:59:55Z"
+      },
+      "committer": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T13:59:55Z"
+      },
+      "message": "Add a file",
+      "tree": {
+        "sha": "5ce0dc52ec987497187a7a937a8c0a8e251cc460",
+        "url": "https://api.github.com/repos/codacy/git-tests/git/trees/5ce0dc52ec987497187a7a937a8c0a8e251cc460"
+      },
+      "url": "https://api.github.com/repos/codacy/git-tests/git/commits/00a5762b09a7704aef6e30ccd7c368758a56261a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/codacy/git-tests/commits/00a5762b09a7704aef6e30ccd7c368758a56261a",
+    "html_url": "https://github.com/codacy/git-tests/commit/00a5762b09a7704aef6e30ccd7c368758a56261a",
+    "comments_url": "https://api.github.com/repos/codacy/git-tests/commits/00a5762b09a7704aef6e30ccd7c368758a56261a/comments",
+    "author": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "15c8c55ea88e9d2e3b2f975cc8eef30848080b7f",
+        "url": "https://api.github.com/repos/codacy/git-tests/commits/15c8c55ea88e9d2e3b2f975cc8eef30848080b7f",
+        "html_url": "https://github.com/codacy/git-tests/commit/15c8c55ea88e9d2e3b2f975cc8eef30848080b7f"
+      }
+    ]
+  },
+  {
+    "sha": "15c8c55ea88e9d2e3b2f975cc8eef30848080b7f",
+    "node_id": "MDY6Q29tbWl0MTM2NjI1NzA0OjE1YzhjNTVlYTg4ZTlkMmUzYjJmOTc1Y2M4ZWVmMzA4NDgwODBiN2Y=",
+    "commit": {
+      "author": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T13:56:25Z"
+      },
+      "committer": {
+        "name": "Johann Egger",
+        "email": "johann@codacy.com",
+        "date": "2018-06-08T13:56:25Z"
+      },
+      "message": "first commit",
+      "tree": {
+        "sha": "613e1f4824c9bced15ec5cd89e25c3d9ab293d24",
+        "url": "https://api.github.com/repos/codacy/git-tests/git/trees/613e1f4824c9bced15ec5cd89e25c3d9ab293d24"
+      },
+      "url": "https://api.github.com/repos/codacy/git-tests/git/commits/15c8c55ea88e9d2e3b2f975cc8eef30848080b7f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/codacy/git-tests/commits/15c8c55ea88e9d2e3b2f975cc8eef30848080b7f",
+    "html_url": "https://github.com/codacy/git-tests/commit/15c8c55ea88e9d2e3b2f975cc8eef30848080b7f",
+    "comments_url": "https://api.github.com/repos/codacy/git-tests/commits/15c8c55ea88e9d2e3b2f975cc8eef30848080b7f/comments",
+    "author": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "johannegger",
+      "id": 7631765,
+      "node_id": "MDQ6VXNlcjc2MzE3NjU=",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7631765?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johannegger",
+      "html_url": "https://github.com/johannegger",
+      "followers_url": "https://api.github.com/users/johannegger/followers",
+      "following_url": "https://api.github.com/users/johannegger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johannegger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johannegger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johannegger/subscriptions",
+      "organizations_url": "https://api.github.com/users/johannegger/orgs",
+      "repos_url": "https://api.github.com/users/johannegger/repos",
+      "events_url": "https://api.github.com/users/johannegger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johannegger/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+
+    ]
+  }
+]
