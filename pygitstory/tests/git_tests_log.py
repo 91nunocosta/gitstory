@@ -3,7 +3,8 @@ from pygitstory.gitlog import GitCommit
 from datetime import datetime
 
 REPO_URL = 'https://github.com/codacy/git-tests.git'
-REPO_PATH = join(join(dirname(abspath(__file__)), 'tmp'), 'git-tests')
+REPOS_DIR = join(dirname(abspath(__file__)), 'tmp') 
+REPO_PATH = join(REPOS_DIR, 'git-tests')
 
 # first 3 commits from 'https://github.com/codacy/git-tests.git'
 GIT_TEST_LOG = [
