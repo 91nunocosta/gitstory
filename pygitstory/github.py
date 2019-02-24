@@ -1,10 +1,13 @@
 """Github API."""
+import requests
+
 from os.path import basename, join
 
 from urllib.parse import urlparse
 
 from pygitstory.gitrepo import GitRepo
 from pygitstory.gitlog import GitLog
+from pygitstory.github_client import GithubAPIClient
 
 class Github:
     """An API for Github."""
@@ -20,17 +23,28 @@ class Github:
         Arguments:
         repo_url -- the url of the remote  GitHub repository.
         """
-        repo_path = self.__repo_path(repo_url)
         if self.gitlog_store.has(repo_url):
             return self.gitlog_store.get(repo_url)
         else:
-            repo = GitRepo.clone(repo_url, repo_path)
-            log = repo.log()
+            try:
+                api_client = GithubAPIClient()
+                log = api_client.get_history(self.__repo_name(repo_url))
+            except requests.exceptions.RequestException:
+                log = self.__fallback_get_history(repo_url)
             self.gitlog_store.put(repo_url, log)
             return log
+        
+    def __fallback_get_history(self, repo_url):
+        repo_path = self.__repo_path(repo_url)
+        repo = GitRepo.clone(repo_url, repo_path)
+        log = repo.log()
+        return log
 
-    def __repo_path(self, repo_url):
-        repo_name = basename((urlparse(repo_url).path))
+    def __repo_name(self, repo_url):
+        repo_name = urlparse(repo_url).path
         if repo_name.endswith('.git'):
             repo_name = repo_name[:-4]
-        return join(self.repos_dir, repo_name)
+        return repo_name
+    
+    def __repo_path(self, repo_url):
+        return join(self.repos_dir, basename(self.__repo_name(repo_url)))

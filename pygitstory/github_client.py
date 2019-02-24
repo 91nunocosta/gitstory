@@ -13,8 +13,10 @@ class GithubAPIClient:
         Arguments:
         repo -- the GitHub repository, formatted as <owner>/<name>
         """
-        url = '{}/repos/{}/commits'.format(API_URL, repo)
+        url = '{}/repos{}/commits'.format(API_URL, repo)
         response = requests.get(url)
+        print(response.status_code)
+        response.raise_for_status()
         content = reversed(response.json())
         commits = [self.__parse_commit(commit) for commit in content]
         return GitLog(commits)

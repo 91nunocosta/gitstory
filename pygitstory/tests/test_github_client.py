@@ -1,4 +1,5 @@
 import json
+import requests
 from os.path import join, abspath, dirname
 
 from unittest import TestCase

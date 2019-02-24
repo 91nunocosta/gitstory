@@ -6,8 +6,8 @@ from dateutil.tz import UTC
 
 TIMEZONE = UTC
 
-REPO_NAME = 'codacy/git-tests'
-REPO_URL = 'https://github.com/{}.git'.format(REPO_NAME)
+REPO_NAME = '/codacy/git-tests'
+REPO_URL = 'https://github.com{}.git'.format(REPO_NAME)
 REPOS_DIR = join(dirname(abspath(__file__)), 'tmp') 
 REPO_PATH = join(REPOS_DIR, 'git-tests')
 
