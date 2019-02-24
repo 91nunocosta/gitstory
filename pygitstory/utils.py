@@ -8,4 +8,8 @@ def as_datetime(value):
     date = value
     if not isinstance(date, datetime):
         date = parse(value)
-    return date.astimezone(UTC)
+    if date.tzinfo is not None:
+        date = date.astimezone(UTC)
+    else:
+        date = date.replace(tzinfo=UTC)
+    return date
