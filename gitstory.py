@@ -30,7 +30,7 @@ def execute():
         elif isinstance(err, InvalidReposDirectory):
             argparser.error('Sorry, the configured REPOS_DIR is not accessible.')
         else:
-            argparser.error("Ups, I don't now what happened.")
+            argparser.error("Ups, I don't know what happened.")
             argparser.error("Blame the developer and forward him the following trace:")
             argparser.error(str(err))
     for commit in history.commits:
