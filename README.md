@@ -12,3 +12,8 @@ GitStory is a simple library to tell git commit histories.
     1. ensure that the values in `env.sh` are suitable;
     2. run `source env.sh`
 3. run the _gitstory_ script, `python3 gitstory <repo url>`
+
+# How to run tests
+
+1. install pytest, `pip install pytest`
+2. run `python3 -m pytest`
