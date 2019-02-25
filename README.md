@@ -30,8 +30,36 @@ Some tests may fail if mongo is not running with the default _host_, `localhost`
 
 4. Follow pagination when using the GitHub API. The current implementation will get only the first page of commits.
 
-5. Encapsulate `GitRepo` factories (`clone`) and the operation of harvesting a remote git repository history using git CLI (`clone`/`fetch` and then `log`), `get_history(repo_url)`, in a `Git` class.
+5. Encapsulate `GitRepo` factories (`clone`) and the operation of harvesting a remote git repository history using git CLI (`clone`/`fetch` and then `log`), in a `Git` class.
+```python
+class Git:
+    
+    def __init__(self, repos_dir):
+        ...
+       
+    def is_cloned(self, repo_url):
+        ...
+        
+    def clone(self, repo_url):
+        ...
+       
+    def fetch(self, repo_url):
+        ...
+      
+    def get_history(self, repo_url):
+        if self.is_cloned(repo_url):
+            repo = self.fetch(repo_url)
+        else
+            repo = self.clone(repo_url)
+        return repo.log()
+```
 
-6. Compose `Github` also with `Git`, `Github(gitlog_store, fallback: Git)`, in order to make `Github` more extensible -- other fallbacks could be used in the future. Tests will also be a little more clear that way.
+6. Compose `Github` also with `Git`, in order to make `Github` more extensible.
+```python
+gitlog_store = MongoGitlogStore(mongo_host, mongo_port, mongo_db)
+git_fallback = Git(repos_dir)
+Github(gitlog_store, git_fallback)
+```
+Other fallbacks could be used in the future. Tests will also be a little more clear that way.
 
 7. Configure mongo with environment variables also in the tests. 
