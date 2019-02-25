@@ -1,6 +1,6 @@
 """Git commands execution."""
 import subprocess
-from os import path
+from os import path, environ
 from os.path import exists as path_exists
 
 from pygitstory.exceptions import (InvalidGitHost, InvalidReposDirectory,
@@ -19,6 +19,9 @@ LOG_FORMAT = SEPARATOR.join(
 
 def clone(remote_url, path):
     """Clone a repository from a remote url into a given path."""
+    # this is needed to know how are the parsed messages
+    lang = environ['LANG'] 
+    environ['LANG'] = 'en_US.UTF-8'
     if path_exists(path):
         return False
     try:
@@ -34,6 +37,7 @@ def clone(remote_url, path):
             # unknown error
             # whenever someone gets here an new exception handling would be added
             raise err
+    environ['LANG'] = lang
     return True
 
 # TODO: log error handling
