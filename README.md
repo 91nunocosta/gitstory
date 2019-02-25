@@ -32,6 +32,6 @@ Some tests may fail if mongo is not running with the default _host_, `localhost`
 
 5. Encapsulate `GitRepo` factories (`clone`) and the operation of harvesting a remote git repository history using git CLI (`clone`/`fetch` and then `log`), `get_history(repo_url)`, in a `Git` class.
 
-6. Compose `Github` also with `GitRepo`, `Github(repos_dir, gitlog_store, fallback=GitRepo())`, in order to make `Github` more extensible -- other fallbacks could be used in the future. Tests will also be a little more clear that way.
+6. Compose `Github` also with `Git`, `Github(gitlog_store, fallback: Git)`, in order to make `Github` more extensible -- other fallbacks could be used in the future. Tests will also be a little more clear that way.
 
 7. Configure mongo with environment variables also in the tests. 
