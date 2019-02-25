@@ -62,4 +62,6 @@ Github(gitlog_store, git_fallback)
 ```
 Other fallbacks could be used in the future. Tests will also be a little more clear that way.
 
-7. Configure mongo with environment variables also in the tests. 
+7. Configure mongo with environment variables also in the tests.
+
+8. Return `None` in `MongoGitlogStore::get(repo_url)` if no commits where found (see [here](https://github.com/91nunocosta/gitstory/blob/f80f096e74e8abf3587afc44a8ca1cff8da52299/pygitstory/gitlog_store.py#L35))
