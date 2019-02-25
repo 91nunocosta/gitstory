@@ -1,6 +1,8 @@
 '''Github public API.'''
 import requests
-from pygitstory.gitlog import GitLog, GitCommit
+
+from pygitstory.exceptions import RepoNotFound
+from pygitstory.gitlog import GitCommit, GitLog
 
 API_URL = 'https://api.github.com'
 
@@ -15,7 +17,8 @@ class GithubAPIClient:
         """
         url = '{}/repos{}/commits'.format(API_URL, repo)
         response = requests.get(url)
-        print(response.status_code)
+        if response.status_code == 404:
+            raise RepoNotFound(url)
         response.raise_for_status()
         content = reversed(response.json())
         commits = [self.__parse_commit(commit) for commit in content]
