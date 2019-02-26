@@ -3,6 +3,8 @@ GitStory is a simple library to tell git commit histories.
 
 #  Pre-requirements
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a7f56633d42d4373ac9495e340263df6)](https://app.codacy.com/app/91nunocosta/gitstory?utm_source=github.com&utm_medium=referral&utm_content=91nunocosta/gitstory&utm_campaign=Badge_Grade_Settings)
+
 1. `python3` installed
 2. `mongodb` installed and running (see https://docs.mongodb.com/v3.2/administration/install-community/)
 
