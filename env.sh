@@ -1,4 +1,4 @@
-export PYTHONPATH=PYTHONPATH:.
+export PYTHONPATH=$PYTHONPATH:.
 
 # MongoDB configs
 # those are the default values, should be ok
